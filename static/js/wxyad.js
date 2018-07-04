@@ -9,11 +9,11 @@ var wxyAD_first_child = null, //body第一个子元素，用来在其前面依�
 	wxyAD_lamu_status = 0; //当前是否有拉幕广告正在展示
 $(function(){
 	//获取广告并进行展示
-	$.post('/index.php/myapi/ad', {is_index:jsGet('wxyad.js', 'is_index')}, function(json){
+	/*$.post('/index.php/myapi/ad', {is_index:jsGet('wxyad.js', 'is_index')}, function(json){
 		//返回结果包含如下字段：title,img,imgwidth,imgheight,top,url,adtype,fontcolor,bgcolor
 		//返回结果如：{obj:[{adtype:?, img:?, url:?, bgcolor:?}...]};
 		if(typeof(json.obj)!=='undefined')wxyAD_show(json.obj);
-	}, 'json');
+	}, 'json');*/
 });
 
 

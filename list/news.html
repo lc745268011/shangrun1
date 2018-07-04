@@ -28,7 +28,7 @@
             </div>
             <div class="pull-right hidden-xs header-nav">
                 <a target="_blank" href="javascript:;" onclick="addFavorite()"><i class="favorite"></i>收藏</a>
-                <a target="_blank" href="/about/lianxi.html"><i class="call"></i>联系我们</a>
+                <a target="_blank" href="http://www.umnet.cn/client/shangrun/about/lianxi.html"><i class="call"></i>联系我们</a>
                 <script>
                     function addFavorite() {
                         var url = window.location;
@@ -322,7 +322,7 @@ $('.my-navbar .search').hover(function () {
     }).scroll();
     var html='',page=1,page_count;
     $.ajax({
-        url: 'http://192.168.0.59/shangrun/lists',
+        url: 'http://47.104.28.242/lists',
         type: 'GET',
         dataType: "jsonp",
         jsonp: "callback",
@@ -338,7 +338,7 @@ $('.my-navbar .search').hover(function () {
     $('.loadmore a').click(function () {
         page++;
         $.ajax({
-            url: 'http://192.168.0.59/shangrun/lists',
+            url: 'http://47.104.28.242/lists',
             type: 'GET',
             dataType: "jsonp",
             jsonp: "callback",

@@ -97,7 +97,7 @@ border-top: 3px solid #f28f00;
 	.header .logo{padding-left:0;}
 	.header .header-nav{padding-right:0;}
 	.nav-container .navbar-collapse{padding-right:0;padding-left:0;}
-	.container .container-f6f6f6{padding: 30px 20px;}
+	.container .container-f6f6f6{padding:0 20px 30px;}
 	.container .container-f6f6f6 h2{margin-top: 0;}
 
 }

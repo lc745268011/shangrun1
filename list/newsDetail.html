@@ -28,7 +28,7 @@
             </div>
             <div class="pull-right hidden-xs header-nav">
                 <a target="_blank" href="javascript:;" onclick="addFavorite()"><i class="favorite"></i>收藏</a>
-                <a target="_blank" href="/about/lianxi.html"><i class="call"></i>联系我们</a>
+                <a target="_blank" href="http://www.umnet.cn/client/shangrun/about/lianxi.html"><i class="call"></i>联系我们</a>
                 <script>
                     function addFavorite() {
                         var url = window.location;
@@ -352,7 +352,7 @@ $('.my-navbar .search').hover(function () {
     var id=GetUrlParam("id");
     var nav_id=GetUrlParam("nav_id");
     $.ajax({
-        url: 'http://192.168.0.59/shangrun/article',
+        url: 'http://47.104.28.242/article',
         type: 'GET',
         dataType: "jsonp",
         jsonp: "callback",

@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="renderer" content="webkit">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>山东海洋集团</title>
-    <meta name="keywords" content="山东海洋，山东海洋集团，山东商润投资集团有限公司">
+    <title>山东商润投资集团有限公司</title>
+    <meta name="keywords" content="">
     <meta name="description"
-          content="山东商润投资集团有限公司是由山东省人民政府批准设立，省国资委监管的股权多元化的国有大型企业，是国内首家以海洋产业为重点领域的投资公司，成立于2010年9月，注册资本32亿元人民币。">
+          content="">
     <meta name="author" content="wangxinyang.cn">
     <link href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.css" rel="stylesheet">
     <link href="http://apps.bdimg.com/libs/animate.css/3.1.0/animate.min.css" rel="stylesheet">
@@ -29,7 +29,7 @@
             </div>
             <div class="pull-right hidden-xs header-nav">
                 <a target="_blank" href="javascript:;" onclick="addFavorite()"><i class="favorite"></i>收藏</a>
-                <a target="_blank" href="/about/lianxi.html"><i class="call"></i>联系我们</a>
+                <a target="_blank" href="http://www.umnet.cn/client/shangrun/about/lianxi.html"><i class="call"></i>联系我们</a>
                 <script>
                     function addFavorite() {
                         var url = window.location;
@@ -345,7 +345,7 @@ $('.my-navbar .search').hover(function () {
         //news
         var html1='',html2='',html3='',html4='',html5='';
         $.ajax({
-            url: 'http://192.168.0.59/shangrun/indexList',
+            url: 'http://47.104.28.242/indexList',
             type: 'GET',
             dataType: "jsonp",
             jsonp: "callback",
@@ -379,12 +379,12 @@ $('.my-navbar .search').hover(function () {
         });
         //新闻轮播图
         $.ajax({
-            url: 'http://192.168.0.59/shangrun/recommend',
+            url: 'http://47.104.28.242/recommend',
             type: 'GET',
             dataType: "jsonp",
             success: function (data) {
                 for(var j=0;j<data.length;j++){
-                    html5+='<div class="item"><a href="http://www.umnet.cn/client/shangrun/list/newsDetail.html?nav_id='+data[j].nav_id+'&id='+data[j].id+'"><img src="http://192.168.0.59/shangrun'+data[j].litpic+'"><div><span class="pull-left self-ellipsis">'+data[j].title+'</span><span class="pull-right hidden-xs">'+data[j].addtime+'</span></div></a></div>'
+                    html5+='<div class="item"><a href="http://www.umnet.cn/client/shangrun/list/newsDetail.html?nav_id='+data[j].nav_id+'&id='+data[j].id+'"><img src="http://47.104.28.242'+data[j].litpic+'"><div><span class="pull-left self-ellipsis">'+data[j].title+'</span><span class="pull-right hidden-xs">'+data[j].addtime+'</span></div></a></div>'
                 }
                 $('.swipe-main').append(html5);
                 $.getScript('http://apps.bdimg.com/libs/swipe/2.0/swipe.min.js');
