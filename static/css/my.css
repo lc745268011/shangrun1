@@ -14,7 +14,7 @@ i{font-style: normal}
 .swipe-main{overflow:hidden;position:relative;}
 .swipe-main>div{float:left;width:100%;position:relative;}
 .swipe-main>div img{display:block;width:100%;}
-
+.logo img{width: 410px}
 @media (max-width: 767px){
 	.wxykefu{display:none;}
 }
@@ -121,7 +121,7 @@ border-top: 3px solid #f28f00;
 .footer .link a{display:block;line-height:2;color:#fff;}
 .footerlogo{color:#999;float: left;text-align: center;width: 33.3%}
 .footerlogo img{display: block;width: 100%;margin: 10px auto}
-.footer .lianxi{float: left;color: #999;list-style: none;width: 43.3%;font-size: 14px;line-height: 1.8;padding-left: 8%}
+.footer .lianxi{float: right;color: #999;list-style: none;font-size: 14px;line-height: 1.8;padding-left: 8%}
 .footer .lianxi li:first-child{font-size: 20px}
 .footer .qrcode{float: left;width: 23.3%;text-align: right}
 .footerlogo a{color:#999;}
