@@ -338,6 +338,7 @@ $('.my-navbar .search').hover(function () {
         }
     });
     $('.loadmore a').click(function () {
+        var html1="";
         page++;
         $.ajax({
             url: 'http://47.104.28.242/lists',
@@ -352,9 +353,9 @@ $('.my-navbar .search').hover(function () {
                     $('.loadmore a').text('加载到底了！')
                 }else{
                     for(var i=0;i<data.info.length;i++){
-                        html+='<div class="item item2"><a class="clearfix" href="/list/newsDetail.html?nav_id='+id+'&id='+data.info[i].id+'"><em></em><h3 class="self-ellipsis">'+data.info[i].title+'</h3><p><i class="time"></i> 时间：'+data.info[i].addtime+'  &nbsp;&nbsp;<i class="click"></i> 浏览：'+data.info[i].click+'</p><span>'+data.info[i].description+'</span></a></div>'
+                        html1+='<div class="item item2"><a class="clearfix" href="http://www.umnet.cn/client/shangrun/list/newsDetail.html?nav_id='+id+'&id='+data.info[i].id+'"><em></em><h3 class="self-ellipsis">'+data.info[i].title+'</h3><p><i class="time"></i> 时间：'+data.info[i].addtime+'  &nbsp;&nbsp;<i class="click"></i> 浏览：'+data.info[i].click+'</p><span>'+data.info[i].description+'</span></a></div>'
                     }
-                    $('.news-list .listbox').append(html)
+                    $('.news-list .listbox').append(html1)
                 }
 
             }

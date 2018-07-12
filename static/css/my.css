@@ -450,8 +450,9 @@ border-top: 3px solid #f28f00;
 	.loadmore  .btn{width:80%;}
 }
 
-h1.news-title{margin-bottom:15px;font-size:28px;}
+h1.news-title{margin-bottom:15px;color: #024A8A;font-size: 24px;}
 h2.news-title{margin-bottom:15px;font-size:22px;color:#666;}
+.newscontent span{font-size: 14px!important;font-family: "Microsoft Yahei", Helvetica, Arial, sans-serif!important;}
 .news-info{font-size:14px;color:#999;}
 i.time,i.click,i.source,i.share{display:inline-block;width:20px;height:16px;vertical-align:middle; transition:all ease .5s;}
 i.time{background:url(../images/icon09.png) 0 0 no-repeat;}
